@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
-int s(int* a, int* b) { 
+int s(int *a, int *b) { 
 	return(*a - *b);
 }
 int func1(int n, int sum){
@@ -17,7 +17,7 @@ int func2(int n, int a[]){
         printf("%d\n", a[n/2]);
     return 0;
 }
-int func3(int n, int a[], int b[]){
+int func3(int n, int b[]){
     int max=0, mod, cnt=0;
     for(int i=0; i<8001; i++){
         if(b[i] > max){
@@ -48,6 +48,6 @@ int main(){
     qsort(a, n, sizeof(int), s);
     func1(n, sum);
     func2(n, a);
-    func3(n, a, b);
+    func3(n, b);
     func4(n, a);
 }

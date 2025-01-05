@@ -3,7 +3,7 @@
 typedef struct{
     int x, y;
 } point;
-int c(void* a, void* b){
+int c(int *a, int *b){
     point* ap = (point*)a;
     point* bp = (point*)b;
     if((*ap).x == (*bp).x)
