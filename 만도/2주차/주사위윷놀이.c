@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
 int dice[10];
 int map[40];
 int check[40]={0};
@@ -47,7 +47,7 @@ void init(){
 }
 
 void dfs(int cnt, int sum){
-    if(cnt == 10) {
+    if(cnt == 10){
         if(sum > result)
             result = sum;
         return;
